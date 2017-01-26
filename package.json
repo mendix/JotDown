@@ -1,0 +1,24 @@
+{
+  "name": "jotdown",
+  "version": "1.0.0",
+  "description": "Create slides in Markdown with Ease",
+  "main": "",
+  "config": {
+    "build": "--output-file index.html --style src/slides.css --template assets/template.html --script assets/slides.js  --include-remark .tmp/slides.md"
+  },
+  "scripts": {
+    "build": "node assets/build.js && markdown-to-slides $npm_package_config_build",
+    "_watch": "gaze \"npm run build\" \"src/*\"",
+    "start": "npm run build && concurrently \"npm run _watch\" \"servant -p 3000 -w --watch-pattern '/index.html'\"",
+    "release": "npm run build && surge -p ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^3.1.0",
+    "gaze-cli": "^0.2.0",
+    "markdown-to-slides": "^1.0.3",
+    "servant": "^4.4.0",
+    "surge": "^0.18.0"
+  }
+}
