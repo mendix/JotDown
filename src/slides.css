@@ -1,0 +1,169 @@
+@import 'https://fonts.googleapis.com/css?family=Cormorant+Garamond';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 4px;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+}
+
+.remark-slide-content {
+    background-color: black;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    display: block;
+    text-align: center;
+    width: calc(1280px - 4em);
+    border-bottom: 1px solid #ddd;
+}
+
+p, li, div {
+    font-size: 42px;
+}
+
+p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+small {
+    font-size: 28px;
+}
+
+.remark-slide-number {
+    font-size: 20px;
+}
+
+a, :visited {
+    text-decoration: none;
+    color: #666;
+}
+
+hr {
+    width: 30%;
+    border: 1px solid black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.remark-code, .remark-code-line {
+    font-size: 22px;
+}
+
+.boring .remark-code {
+    background-color: black;
+    padding: 0em 8em !important;
+    opacity: 0.7;
+}
+
+.remark-slide-content pre {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+ul, ol {
+    text-align: left;
+    display: inline-block;
+    clear: both;
+}
+
+.appear {
+    visibility: hidden;
+}
+
+.remark-slide-content {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.remark-slide-content ol, .remark-slide-content ul {
+    text-align: left;
+    margin-left: 4em;
+}
+
+.remark-slide-content pre {
+    text-align: left;
+    margin-left: -4em;
+    margin-right: -4em;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.remark-slide-content pre  code.remark-code {
+    padding: 0.5em 8em;
+}
+
+.remark-slide-content .appeared pre code,
+.remark-slide-content .boring pre code
+{
+    margin-left: 4em;
+}
+
+.fullscreen {
+    padding: 0
+}
+
+.fullscreen p {
+    margin: 0;
+    display: block;
+    width: 100%;
+    top: 0px;
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+}
+
+.fullscreen img {
+    top: 0px;
+    left: 0px;
+    vertical-align: middle;
+    height: 681px;
+    position: absolute;
+}
+
+.stacked img {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+div.background {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 1210px;
+    height: 681px;
+    opacity: 0.99;
+    vertical-align: middle;
+    text-align: center;
+}
+
+div.background img {
+    max-width: 100%;
+}
+
+div.lighten {
+    opacity: 0.6 !important;
+}
+
+.whitebg {
+    background-color: white !important;
+}
+
+.layer1 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    height: 681px;
+    width: 1210px;
+    margin-left: 80px;
+    margin-top: 149px;
+}
