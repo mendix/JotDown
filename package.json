@@ -19,6 +19,6 @@
     "gaze-cli": "^0.2.0",
     "markdown-to-slides": "^1.0.3",
     "servant": "^4.4.0",
-    "surge": "^0.18.0"
+    "surge": "^0.21.7"
   }
 }
